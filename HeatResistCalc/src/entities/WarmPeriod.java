@@ -5,10 +5,8 @@
  */
 package entities;
 
-import com.sun.istack.internal.NotNull;
 import java.io.Serializable;
 import javax.persistence.*;
-import static org.eclipse.persistence.expressions.ExpressionOperator.NotNull;
 
 /**
  *
@@ -59,6 +57,9 @@ public class WarmPeriod implements Serializable {
 
     @Column(nullable = true)
     private double windMinMediumSpeedJanuary;
+
+    public WarmPeriod() {
+    }
 
     public String getCityName() {
         return cityName;
@@ -163,7 +164,5 @@ public class WarmPeriod implements Serializable {
     public void setWindMinMediumSpeedJanuary(double windMinMediumSpeedJanuary) {
         this.windMinMediumSpeedJanuary = windMinMediumSpeedJanuary;
     }
-    
-    
 
 }

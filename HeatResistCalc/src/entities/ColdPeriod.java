@@ -21,7 +21,7 @@ public class ColdPeriod implements Serializable {
 
     @Column(nullable = false)
     private String cityName;
-    
+
     @Column(nullable = true)
     private double temp1d098;
 
@@ -78,6 +78,9 @@ public class ColdPeriod implements Serializable {
 
     @Column(nullable = true)
     private double windMediumSpeedBelow8Deg;
+
+    public ColdPeriod() {
+    }
 
     public String getCityName() {
         return cityName;
@@ -238,6 +241,5 @@ public class ColdPeriod implements Serializable {
     public void setWindMediumSpeedBelow8Deg(double windMediumSpeedBelow8Deg) {
         this.windMediumSpeedBelow8Deg = windMediumSpeedBelow8Deg;
     }
-    
-    
+
 }
