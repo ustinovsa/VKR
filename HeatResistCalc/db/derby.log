@@ -1,24 +1,7 @@
-Sun Jan 12 20:38:09 MSK 2020 : Сетевой сервер Apache Derby Network Server - 10.10.2.0 - (1582446) запущен и готов принимать соединения на порту 1527 на {3} 
+Tue Jan 14 21:12:49 MSK 2020 : Сетевой сервер Apache Derby Network Server - 10.10.2.0 - (1582446) запущен и готов принимать соединения на порту 1527 на {3} 
 ----------------------------------------------------------------
-Sun Jan 12 20:38:10 MSK 2020:
- Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): экземпляр a816c00e-016f-9ad5-a29e-ffffbe5a74db
-в каталоге базы данных D:\Dropbox\vkr\SP50HeatResistCalc\HeatResistCalc\db\Climatology sun.misc.Launcher$AppClassLoader@1d44bcfa 
-
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_212-b10
-user.dir=C:\Users\Home\GlassFish Server\4.1.1\glassfish-4.1.1\javadb
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
-derby.system.home=D:\Dropbox\vkr\SP50HeatResistCalc\HeatResistCalc\db
-Запущен загрузчик классов базы данных - derby.database.classpath=''
-----------------------------------------------------------------
-Sun Jan 12 20:38:18 MSK 2020:
-Завершается работа экземпляра a816c00e-016f-9ad5-a29e-ffffbe5a74db
-Sun Jan 12 20:38:19 MSK 2020 Thread[DRDAConnThread_2,5,main] (DATABASE = Climatology), (DRDAID = {2}), База данных 'Climatology' завершила работу.
-----------------------------------------------------------------
-Sun Jan 12 20:38:22 MSK 2020:
- Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): экземпляр ed8940a7-016f-9ad5-a29e-ffffbe5a74db
+Tue Jan 14 21:12:50 MSK 2020:
+ Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): экземпляр a816c00e-016f-a542-177e-ffffbe5a74db
 в каталоге базы данных D:\Dropbox\vkr\SP50HeatResistCalc\HeatResistCalc\db\Climatology sun.misc.Launcher$AppClassLoader@1d44bcfa 
 
 java.vendor=Oracle Corporation
