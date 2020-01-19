@@ -18,7 +18,7 @@ public class HumidityConditions {
     public HumidityConditions(double temperature, double relativeHumidity) {
         this.temperature = temperature;
         this.relativeHumidity = relativeHumidity;
-        check();
+        mode();
     }
 
     public int mode() {

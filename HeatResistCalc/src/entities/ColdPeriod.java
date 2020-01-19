@@ -13,91 +13,74 @@ import javax.persistence.*;
  * @author Home
  */
 @Entity
+@Table(name="ColdPeriod")
 public class ColdPeriod implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "id",
+            unique=true)
     private long id;
 
     @Column(name = "cityName",
             nullable = false)
     private String cityName;
 
-    @Column(name = "temp1d098",
-            nullable = true)
+    @Column(name = "temp1d098")
     private double temp1d098;
 
-    @Column(name = "temp1d092",
-            nullable = true)
+    @Column(name = "temp1d092")
     private double temp1d092;
 
-    @Column(name = "temp5d098",
-            nullable = true)
+    @Column(name = "temp5d098")
     private double temp5d098;
 
-    @Column(name = "temp5d092",
-            nullable = true)
+    @Column(name = "temp5d092")
     private double temp5d092;
 
-    @Column(name = "temp094",
-            nullable = true)
+    @Column(name = "temp094")
     private double temp094;
 
-    @Column(name = "tempAbsMin",
-            nullable = true)
+    @Column(name = "tempAbsMin")
     private double tempAbsMin;
 
-    @Column(name = "temp1dAmplitudeColdestMonth",
-            nullable = true)
+    @Column(name = "temp1dAmplitudeColdestMonth")
     private double temp1dAmplitudeColdestMonth;
 
-    @Column(name = "below0DegDuration",
-            nullable = true)
+    @Column(name = "below0DegDuration")
     private double below0DegDuration;
 
-    @Column(name = "below0DegtempMedium",
-            nullable = true)
+    @Column(name = "below0DegtempMedium")
     private double below0DegtempMedium;
 
-    @Column(name = "below8DegDuration",
-            nullable = true)
+    @Column(name = "below8DegDuration")
     private double below8DegDuration;
 
-    @Column(name = "below8DegtempMedium",
-            nullable = true)
+    @Column(name = "below8DegtempMedium")
     private double below8DegtempMedium;
 
-    @Column(name = "below10DegDuration",
-            nullable = true)
+    @Column(name = "below10DegDuration")
     private double below10DegDuration;
 
-    @Column(name = "below10DegtempMedium",
-            nullable = true)
+    @Column(name = "below10DegtempMedium")
     private double below10DegtempMedium;
 
-    @Column(name = "averageRelativeHumidityColdestMonth",
-            nullable = true)
+    @Column(name = "averageRelativeHumidityColdestMonth")
     private double averageRelativeHumidityColdestMonth;
 
-    @Column(name = "averageRelativeHumidityAt15hColdestMonth",
-            nullable = true)
+    @Column(name = "averageRelativeHumidityAt15hColdestMonth")
     private double averageRelativeHumidityAt15hColdestMonth;
 
-    @Column(name = "rainfall",
-            nullable = true)
+    @Column(name = "rainfall")
     private double rainfall;
 
-    @Column(name = "windDirection",
-            nullable = true)
+    @Column(name = "windDirection")
     private String windDirection;
 
-    @Column(name = "windMaxMediumSpeedJanuary",
-            nullable = true)
+    @Column(name = "windMaxMediumSpeedJanuary")
     private double windMaxMediumSpeedJanuary;
 
-    @Column(name = "windMediumSpeedBelow8Deg",
-            nullable = true)
+    @Column(name = "windMediumSpeedBelow8Deg")
     private double windMediumSpeedBelow8Deg;
 
     public ColdPeriod() {
