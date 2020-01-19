@@ -17,66 +17,87 @@ public class ColdPeriod implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private long id;
 
-    @Column(nullable = false)
+    @Column(name = "cityName",
+            nullable = false)
     private String cityName;
 
-    @Column(nullable = true)
+    @Column(name = "temp1d098",
+            nullable = true)
     private double temp1d098;
 
-    @Column(nullable = true)
+    @Column(name = "temp1d092",
+            nullable = true)
     private double temp1d092;
 
-    @Column(nullable = true)
+    @Column(name = "temp5d098",
+            nullable = true)
     private double temp5d098;
 
-    @Column(nullable = true)
+    @Column(name = "temp5d092",
+            nullable = true)
     private double temp5d092;
 
-    @Column(nullable = true)
+    @Column(name = "temp094",
+            nullable = true)
     private double temp094;
 
-    @Column(nullable = true)
+    @Column(name = "tempAbsMin",
+            nullable = true)
     private double tempAbsMin;
 
-    @Column(nullable = true)
+    @Column(name = "temp1dAmplitudeColdestMonth",
+            nullable = true)
     private double temp1dAmplitudeColdestMonth;
 
-    @Column(nullable = true)
+    @Column(name = "below0DegDuration",
+            nullable = true)
     private double below0DegDuration;
 
-    @Column(nullable = true)
+    @Column(name = "below0DegtempMedium",
+            nullable = true)
     private double below0DegtempMedium;
 
-    @Column(nullable = true)
+    @Column(name = "below8DegDuration",
+            nullable = true)
     private double below8DegDuration;
 
-    @Column(nullable = true)
+    @Column(name = "below8DegtempMedium",
+            nullable = true)
     private double below8DegtempMedium;
 
-    @Column(nullable = true)
+    @Column(name = "below10DegDuration",
+            nullable = true)
     private double below10DegDuration;
 
-    @Column(nullable = true)
+    @Column(name = "below10DegtempMedium",
+            nullable = true)
     private double below10DegtempMedium;
 
-    @Column(nullable = true)
+    @Column(name = "averageRelativeHumidityColdestMonth",
+            nullable = true)
     private double averageRelativeHumidityColdestMonth;
 
-    @Column(nullable = true)
+    @Column(name = "averageRelativeHumidityAt15hColdestMonth",
+            nullable = true)
     private double averageRelativeHumidityAt15hColdestMonth;
 
-    @Column(nullable = true)
+    @Column(name = "rainfall",
+            nullable = true)
     private double rainfall;
 
-    @Column(nullable = true)
+    @Column(name = "windDirection",
+            nullable = true)
     private String windDirection;
 
-    @Column(nullable = true)
+    @Column(name = "windMaxMediumSpeedJanuary",
+            nullable = true)
     private double windMaxMediumSpeedJanuary;
 
-    @Column(nullable = true)
+    @Column(name = "windMediumSpeedBelow8Deg",
+            nullable = true)
     private double windMediumSpeedBelow8Deg;
 
     public ColdPeriod() {
@@ -142,72 +163,90 @@ public class ColdPeriod implements Serializable {
         return temp1dAmplitudeColdestMonth;
     }
 
-    public void setTemp1dAmplitudeColdestMonth(double temp1dAmplitudeColdestMonth) {
-        this.temp1dAmplitudeColdestMonth = temp1dAmplitudeColdestMonth;
+    public void setTemp1dAmplitudeColdestMonth(
+            double temp1dAmplitudeColdestMonth) {
+        this.temp1dAmplitudeColdestMonth
+                = temp1dAmplitudeColdestMonth;
     }
 
     public double getBelow0DegDuration() {
         return below0DegDuration;
     }
 
-    public void setBelow0DegDuration(double below0DegDuration) {
-        this.below0DegDuration = below0DegDuration;
+    public void setBelow0DegDuration(
+            double below0DegDuration) {
+        this.below0DegDuration
+                = below0DegDuration;
     }
 
     public double getBelow0DegtempMedium() {
         return below0DegtempMedium;
     }
 
-    public void setBelow0DegtempMedium(double below0DegtempMedium) {
-        this.below0DegtempMedium = below0DegtempMedium;
+    public void setBelow0DegtempMedium(
+            double below0DegtempMedium) {
+        this.below0DegtempMedium
+                = below0DegtempMedium;
     }
 
     public double getBelow8DegDuration() {
         return below8DegDuration;
     }
 
-    public void setBelow8DegDuration(double below8DegDuration) {
-        this.below8DegDuration = below8DegDuration;
+    public void setBelow8DegDuration(
+            double below8DegDuration) {
+        this.below8DegDuration
+                = below8DegDuration;
     }
 
     public double getBelow8DegtempMedium() {
         return below8DegtempMedium;
     }
 
-    public void setBelow8DegtempMedium(double below8DegtempMedium) {
-        this.below8DegtempMedium = below8DegtempMedium;
+    public void setBelow8DegtempMedium(
+            double below8DegtempMedium) {
+        this.below8DegtempMedium
+                = below8DegtempMedium;
     }
 
     public double getBelow10DegDuration() {
         return below10DegDuration;
     }
 
-    public void setBelow10DegDuration(double below10DegDuration) {
-        this.below10DegDuration = below10DegDuration;
+    public void setBelow10DegDuration(
+            double below10DegDuration) {
+        this.below10DegDuration
+                = below10DegDuration;
     }
 
     public double getBelow10DegtempMedium() {
         return below10DegtempMedium;
     }
 
-    public void setBelow10DegtempMedium(double below10DegtempMedium) {
-        this.below10DegtempMedium = below10DegtempMedium;
+    public void setBelow10DegtempMedium(
+            double below10DegtempMedium) {
+        this.below10DegtempMedium
+                = below10DegtempMedium;
     }
 
     public double getAverageRelativeHumidityColdestMonth() {
         return averageRelativeHumidityColdestMonth;
     }
 
-    public void setAverageRelativeHumidityColdestMonth(double averageRelativeHumidityColdestMonth) {
-        this.averageRelativeHumidityColdestMonth = averageRelativeHumidityColdestMonth;
+    public void setAverageRelativeHumidityColdestMonth(
+            double averageRelativeHumidityColdestMonth) {
+        this.averageRelativeHumidityColdestMonth
+                = averageRelativeHumidityColdestMonth;
     }
 
     public double getAverageRelativeHumidityAt15hColdestMonth() {
         return averageRelativeHumidityAt15hColdestMonth;
     }
 
-    public void setAverageRelativeHumidityAt15hColdestMonth(double averageRelativeHumidityAt15hColdestMonth) {
-        this.averageRelativeHumidityAt15hColdestMonth = averageRelativeHumidityAt15hColdestMonth;
+    public void setAverageRelativeHumidityAt15hColdestMonth(
+            double averageRelativeHumidityAt15hColdestMonth) {
+        this.averageRelativeHumidityAt15hColdestMonth
+                = averageRelativeHumidityAt15hColdestMonth;
     }
 
     public double getRainfall() {
@@ -230,16 +269,20 @@ public class ColdPeriod implements Serializable {
         return windMaxMediumSpeedJanuary;
     }
 
-    public void setWindMaxMediumSpeedJanuary(double windMaxMediumSpeedJanuary) {
-        this.windMaxMediumSpeedJanuary = windMaxMediumSpeedJanuary;
+    public void setWindMaxMediumSpeedJanuary(
+            double windMaxMediumSpeedJanuary) {
+        this.windMaxMediumSpeedJanuary
+                = windMaxMediumSpeedJanuary;
     }
 
     public double getWindMediumSpeedBelow8Deg() {
         return windMediumSpeedBelow8Deg;
     }
 
-    public void setWindMediumSpeedBelow8Deg(double windMediumSpeedBelow8Deg) {
-        this.windMediumSpeedBelow8Deg = windMediumSpeedBelow8Deg;
+    public void setWindMediumSpeedBelow8Deg(
+            double windMediumSpeedBelow8Deg) {
+        this.windMediumSpeedBelow8Deg
+                = windMediumSpeedBelow8Deg;
     }
 
 }
