@@ -1,0 +1,18 @@
+
+nav ul {
+    list-style: none ;
+    margin: auto;
+
+}
+
+
+nav ul>li{
+    display: compact;
+    width: auto;
+    margin-right: 2em;
+
+}
+
+nav ul>li:last-child{
+    margin-right: 0;
+}
