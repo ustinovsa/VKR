@@ -33,6 +33,38 @@
                placeholder="<fmt:message key="label.city"/>"
                required>
     </p>
+    <p class="row gap-bottom">
+        <input type="typeOfRoom"
+               name="typeOfRoom"
+               value="${param.typeOfRoom}"
+               placeholder="<fmt:message key="label.typeOfRoom"/>"
+               required>
+    </p>
+    
+    <p class="row gap-bottom">
+        <input type="typeOfConstruction"
+               name="typeOfConstruction"
+               value="${param.typeOfConstruction}"
+               placeholder="<fmt:message key="label.typeOfConstruction"/>"
+               required>
+    </p>
+    
+    <p class="row gap-bottom">
+        <input type="temperatureInside"
+               name="temperatureInside"
+               value="${param.temepratureInside}"
+               placeholder="<fmt:message key="label.temperatureInside"/>"
+               required>
+    </p>
+    
+    <p class="row gap-bottom">
+        <input type="relativeHumidityInside"
+               name="relativeHumidityInside"
+               value="${param.temepratureInside}"
+               placeholder="<fmt:message key="label.relativeHumidityInside"/>"
+               required>
+    </p>
+
 
     <p class="row gap-bottom">
         <button class="pull-right">

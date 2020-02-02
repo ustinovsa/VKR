@@ -22,9 +22,9 @@ public class ColdPeriod implements Serializable {
             unique=true)
     private long id;
 
-    @Column(name = "cityName",
+    @Column(name = "city",
             nullable = false)
-    private String cityName;
+    private String city;
 
     @Column(name = "temp1d098")
     private double temp1d098;
@@ -86,12 +86,12 @@ public class ColdPeriod implements Serializable {
     public ColdPeriod() {
     }
 
-    public String getCityName() {
-        return cityName;
+    public String getCity() {
+        return city;
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public double getTemp1d098() {
