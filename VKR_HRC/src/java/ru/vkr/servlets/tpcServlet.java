@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/calculations/tpc")
 public class tpcServlet extends HttpServlet{
-    public static final String URL = "WEB-INF/pages/calculations/tpc.jsp";
+    public static final String URL = "/WEB-INF/pages/calculations/tpc.jsp";
 
     @Override
     protected void doGet(HttpServletRequest request,
